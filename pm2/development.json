@@ -1,0 +1,11 @@
+{
+  "name": "blued-webapp",
+  "script": "/home/work/blued-webapp/current/index.js",
+  "error_file": "/data/logs/pm2/blued-webapp/error.log",
+  "out_file": "/data/logs/pm2/blued-webapp/out.log",
+  "log_date_format": "YYYY-MM-DD HH:mm Z",
+  "ignore_watch": ["node_modules"],
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
