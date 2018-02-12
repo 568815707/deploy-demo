@@ -2,7 +2,7 @@
 
 module.exports = function (shipit) {
   require('shipit-deploy')(shipit);
-  require('shipit-cnpm')(shipit);
+  require('shipit-cnpm')(shipit)
   shipit.initConfig({
     default: {
       workspace: '/tmp/github-monitor',
@@ -19,10 +19,9 @@ module.exports = function (shipit) {
         npm: 'cnpm',
         remote: true
     },
-    staging: {
+    production: {
       servers: ['root@39.106.194.105'],
 	    branch: 'master'
     }
-  }
   });
 };
