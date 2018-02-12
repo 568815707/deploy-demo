@@ -5,8 +5,8 @@ module.exports = function (shipit) {
   require('shipit-cnpm')(shipit)
   shipit.initConfig({
     default: {
-      workspace: '/tmp/github-monitor',
-      deployTo: '/tmp/deploy_to',
+      workspace: '/tmp/deploy/shipit-demo',
+      deployTo: '/home/work/shipit-demo',
       repositoryUrl: 'https://github.com/568815707/deploy-demo.git',
       ignores: ['.git', 'node_modules'],
       keepReleases: 2,
@@ -36,5 +36,5 @@ module.exports = function (shipit) {
       servers: ['root@39.106.194.105'],
       branch: 'test'
     }
-  )}
+  })
 }
