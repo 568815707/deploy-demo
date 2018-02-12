@@ -19,8 +19,8 @@ module.exports = function (shipit) {
         npm: 'cnpm',
         remote: true
     },
-    production: {
-      servers: ['work@39.106.194.105'],
+    staging: {
+      servers: ['root@39.106.194.105'],
 	    branch: 'master'
     }
   }

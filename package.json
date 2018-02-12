@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV='local' nodemon --harmony index.js",
     "start:dev": "NODE_DEV='local_dev' npm start",
-    "deploy": "shipit production deploy",
+    "deploy": "shipit staging deploy",
     "deploy:dev": "shipit development deploy",
     "rollback": "shipit production rollback",
     "rollback:dev": "shipit development rollback",
