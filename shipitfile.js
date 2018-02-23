@@ -22,19 +22,19 @@ module.exports = function (shipit) {
       pm: {
         production: {
           path: '/home/work/deploy-demo/current/pm2/production.json'
-        },
-        development: {
-          path: '/home/work/deploy-demo/current/pm2/development.json'
         }
+        // development: {
+        //   path: '/home/work/deploy-demo/current/pm2/development.json'
+        // }
       }
     },
     production: {
       servers: ['root@39.106.194.105'],
       branch: 'master'
-    },
-    development: {
-      servers: ['root@39.106.194.105'],
-      branch: 'test'
     }
+    // development: {
+    //   servers: ['root@39.106.194.105'],
+    //   branch: 'test'
+    // }
   })
 }
