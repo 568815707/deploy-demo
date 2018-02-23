@@ -1,13 +1,25 @@
 'use strict'
 
-const serve = require('koa-static');
-const Koa = require('koa');
-const app = new Koa();
+// var bd = require('bd') // app框架
+// var serve = require('koa-static') // koa 的静态资源
+// var path = require('path') // 路径
+// var app = bd()
+// const fs = require('fs')
+const Koa = require('koa')
+const router = require('koa-router')()
+const app = new Koa()
 
-app.use(function * () {
-  this.body = '<p>我是个HTML片段</p>'
-})
+const routers = require('./server/router/first.js')
+
+app.use(routers.routes()).use(routers.allowedMethods());
 
 app.listen(9000, function () {
   console.log('listen on 9000');
+})
+
+process.on('uncaughtException', function (err) {
+  console.log(err)
+  console.log(err.message)
+  console.log(err.stack)
+  process.exit()
 })
