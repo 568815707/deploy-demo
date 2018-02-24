@@ -7,7 +7,7 @@ module.exports = {
       '39.106.194.105'
     ],
     'user': 'root',
-    'password': 'kuaile1118',
+    'password': 'Kuaile1118.',
     'database': 'myself',
     'port': '3306'
   }
