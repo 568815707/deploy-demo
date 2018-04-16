@@ -1,4 +1,4 @@
-# deploy-demo 瞎搞的一个项目吧，也不知道写啥了。
+# deploy-demo  about interview system back-end。
 
 ### 一、项目架构
 
