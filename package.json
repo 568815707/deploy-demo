@@ -1,7 +1,7 @@
 {
-  "name": "deploy-demo",
-  "version": "0.0.1",
-  "description": "my deploy-demo",
+  "name": "Interview question generation system.",
+  "version": "1.0.0",
+  "description": "Interview question generation system back-end",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV='local' nodemon --harmony index.js",

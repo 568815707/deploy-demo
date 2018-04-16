@@ -1,13 +1,11 @@
 // first router
 
 const router = require('koa-router')()
-const { query } = require('../../libs/mysql.js')
-
-const table = 'demo'
+const { query } = require('../libs/mysql.js')
 
 router.get('/', async(ctx, next) => {
   const arr = await query(`
-    select uid, video, content from ${table}
+    select uid, video, content from demo
     `)
   let result = arr.map(({uid, video, content}) => {
     return {
