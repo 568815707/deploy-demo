@@ -1,5 +1,5 @@
 {
-  "name": "Interview question generation system.",
+  "name": "Interview-system.",
   "version": "1.0.0",
   "description": "Interview question generation system back-end",
   "main": "index.js",
