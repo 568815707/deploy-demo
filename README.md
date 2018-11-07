@@ -1,4 +1,4 @@
-# deploy-demo  about interview system back-end。
+# koa-deploy-demo
 
 ### 一、项目架构
 
@@ -13,7 +13,7 @@
 
 ### 二、开发流程
 
-哎呀，目前的开发流程比较粗暴，简单。
+目前的开发流程比较粗暴，简单。
 
 1、在 server 下创建一个 js 文件（脚本里面写的都是 router）。
 2、在 index.js 文件中引用你刚刚创建的 js 文件， 然后 use 一下就行了。
